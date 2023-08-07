@@ -6,7 +6,11 @@ const home = () => {
     <section className="content-background dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-left lg:mb-16 mb-8">
-          <img src="./pictures/rci-blue.svg" alt="Main-Logo" className="logo" />
+          <img
+            src="./pictures/rci-blue.svg"
+            alt="Main-Logo"
+            className="logo animate-pulse"
+          />
           <p className="font-light text-black sm:text-xl text-xl dark:text-gray-400 font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
