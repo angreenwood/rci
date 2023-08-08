@@ -20,7 +20,6 @@ function Contact() {
         <form
           name="contact"
           method="POST"
-          onSubmit={getSuccess}
           data-netlify="true"
           data-netlify-recaptcha="true"
           netlify-honeypot="test-field"
