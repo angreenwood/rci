@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./contact.scss";
 function Contact() {
+  const navigate = useNavigate();
+  const getSuccess = (event) => {
+    navigate("/success");
+    event.preventDefault();
+  };
   return (
     <section className="content-background dark:bg-gray-900">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -14,6 +20,7 @@ function Contact() {
         <form
           name="contact"
           method="POST"
+          onSubmit={getSuccess}
           data-netlify="true"
           data-netlify-recaptcha="true"
           netlify-honeypot="test-field"
