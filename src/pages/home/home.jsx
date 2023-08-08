@@ -3,7 +3,7 @@ import "./home.scss";
 
 const home = () => {
   return (
-    <section className="content-background dark:bg-gray-900 h-screen">
+    <section className="content-background dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl  lg:px-6">
         <div className="mx-auto max-w-screen-sm text-left lg:mb-16 mb-8">
           <img src="./pictures/rci-blue.svg" alt="Main-Logo" className="logo" />
