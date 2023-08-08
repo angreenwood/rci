@@ -12,7 +12,7 @@ const Contact = () => (
         {error && (
           <p>Sorry, we could not reach our servers. Please try again later.</p>
         )}
-        <section className="content-background dark:bg-gray-900 ">
+        <section className="content-background dark:bg-gray-900 h-screen">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">
               Contact Us
