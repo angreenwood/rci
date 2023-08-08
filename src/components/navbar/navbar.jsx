@@ -69,7 +69,8 @@ export default function NavBar() {
                 className="flex items-center"
                 onClick={handleLinkClick}
               >
-                <SiBlueprint size={42} className="horn" /> RCI Engineering
+                <SiBlueprint size={42} className="horn animate-pulse" /> RCI
+                Engineering
               </Link>
             </span>
           </Typography>
