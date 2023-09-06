@@ -4,7 +4,7 @@ import "./home.scss";
 const home = () => {
   return (
     <section className="home-background">
-      <div className="py-8 px-4 max-w-screen-xl  lg:px-6">
+      <div className="py-20 px-4 max-w-screen-xl lg:px-6">
         <div className="mx-auto max-w-screen-sm text-left lg:mb-16 mb-8">
           <p className="font-light text-white sm:text-xl text-xl font-semibold">
             RCI STRUCTURAL ENGINEERING
