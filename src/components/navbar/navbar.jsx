@@ -89,11 +89,7 @@ export default function NavBar() {
                 className="flex items-center"
                 onClick={handleLinkClick}
               >
-                <img
-                  src="pictures/rciLogo.svg"
-                  alt="RCI Logo"
-                  className="nav-logo"
-                />
+                <img src="/rciLogo.svg" alt="RCI Logo" className="nav-logo" />
               </Link>
             </span>
           </Typography>
