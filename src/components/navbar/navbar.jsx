@@ -32,16 +32,34 @@ export default function NavBar() {
       </Typography>
       <Typography as="li" variant="small">
         <Link
-          to="/about"
+          to="/under-construction"
           className="flex items-center font-medium"
           onClick={handleLinkClick}
         >
-          About Us
+          About
         </Link>
       </Typography>
       <Typography as="li" variant="small">
         <Link
-          to="/contact"
+          to="/under-construction"
+          className="flex items-center font-medium"
+          onClick={handleLinkClick}
+        >
+          Services
+        </Link>
+      </Typography>
+      <Typography as="li" variant="small">
+        <Link
+          to="/under-construction"
+          className="flex items-center font-medium"
+          onClick={handleLinkClick}
+        >
+          Projects
+        </Link>
+      </Typography>
+      <Typography as="li" variant="small">
+        <Link
+          to="/under-construction"
           className="flex items-center font-medium"
           onClick={handleLinkClick}
         >
