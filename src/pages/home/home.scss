@@ -2,14 +2,20 @@
     margin-top:10%;
 }
 
-.home-post{
-    background-color:#323740;
-}
-
 .project-list{
     list-style-type: circle;
     padding-left:2%;
 }
 .header{
     color: hsl(209deg, 71%, 44%) !important;
+}
+
+.home-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("pictures/homepage.jpg");
+    background-size: cover;
+    height:100%;
+    @media screen and (max-width: 992px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("pictures/homepage.jpg");
+  }
+
 }
