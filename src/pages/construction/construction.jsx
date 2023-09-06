@@ -4,7 +4,7 @@ import "./construction.scss";
 
 function Construction() {
   return (
-    <section className="content-background dark:bg-gray-900 flex h-screen">
+    <section className="content-background flex h-screen">
       <div className="m-auto">
         <MdOutlineConstruction
           className="construction-icon mx-auto"
