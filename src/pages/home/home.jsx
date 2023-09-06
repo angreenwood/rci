@@ -3,11 +3,10 @@ import "./home.scss";
 
 const home = () => {
   return (
-    <section className="content-background dark:bg-gray-900">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl  lg:px-6">
+    <section className="content-background">
+      <div className="py-8 px-4 max-w-screen-xl  lg:px-6">
         <div className="mx-auto max-w-screen-sm text-left lg:mb-16 mb-8">
-          <img src="./pictures/rci-blue.svg" alt="Main-Logo" className="logo" />
-          <p className="font-light text-black sm:text-xl text-xl dark:text-gray-400 font-normal">
+          <p className="font-light text-white sm:text-xl text-xl font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -18,7 +17,7 @@ const home = () => {
           </p>
         </div>
         <div className="mx-auto max-w-screen-sm text-left lg:mb-16 mb-8">
-          <p className="font-light text-black sm:text-xl text-xl dark:text-gray-400 font-normal">
+          <p className="font-light text-white sm:text-xl text-xl font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

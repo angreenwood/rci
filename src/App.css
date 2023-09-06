@@ -66,6 +66,9 @@ Variables
 
 html, body, #root, .App {
   height: 100%;
+  @media screen and (max-width: 992px) {
+      height:fit-content;
+}
 }
 
 .App-header {

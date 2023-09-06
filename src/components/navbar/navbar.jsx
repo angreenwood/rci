@@ -7,7 +7,9 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { SiBlueprint } from "react-icons/si";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+
 import { Outlet, Link } from "react-router-dom";
 import "./navbar.scss";
 
@@ -56,8 +58,8 @@ export default function NavBar() {
         setOpenNav(false);
       }}
     >
-      <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 nav-div">
-        <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+      <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 nav-div nav-stripe">
+        <div className="container lg:ml-72 flex items-center justify-between text-blue-gray-900">
           <Typography
             variant="small"
             className="mr-4 cursor-pointer py-1.5 font-medium"
@@ -69,8 +71,11 @@ export default function NavBar() {
                 className="flex items-center"
                 onClick={handleLinkClick}
               >
-                <SiBlueprint size={42} className="horn animate-pulse" /> RCI
-                Engineering
+                <img
+                  src="pictures/rciLogo.svg"
+                  alt="RCI Logo"
+                  className="nav-logo"
+                />
               </Link>
             </span>
           </Typography>
@@ -78,40 +83,11 @@ export default function NavBar() {
 
           <IconButton
             variant="text"
-            className="ml-auto h-6 w-6 open-nav text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="ml-auto h-10 w-10 open-nav text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >
-            {openNav ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                className="h-6 w-6"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
+            {openNav ? <IoClose size="lg" /> : <IoMenu size="lg" />}
           </IconButton>
         </div>
         <MobileNav open={openNav}>{navList}</MobileNav>
